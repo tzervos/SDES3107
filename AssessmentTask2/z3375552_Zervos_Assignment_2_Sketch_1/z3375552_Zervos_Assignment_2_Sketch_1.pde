@@ -19,8 +19,8 @@ float tileCount = 24;
 int actRandomSeed = 10;
 
 PFont font;
-String s = "Hey, Josh!";
-float angle = 0.0;
+String s = "ENCIRCLED";
+float angle = 20.0;
 
 void setup(){
   size(600, 600);
@@ -40,10 +40,10 @@ void draw() {
   smooth();
   fill (255);
   stroke(2);
-  angle += 0.02;
+  angle += 0.03;
   pushMatrix();
   translate(150, 100); 
-  scale((cos(angle*4.0) + .8) * 1.5); 
+  scale((cos(angle*.4) + 2) * 2); 
   rotate(angle);
   text(s, 5, 0);
   popMatrix();
